@@ -33,3 +33,119 @@ p {
     background-color:#eaeaea;
     color: #333333;
 }
+#showcase {
+    min-height: 450px;
+    color: #ffffff;
+    text-align: center;
+}
+#showcase .bg__image {
+    position: absolute;
+    background-color: #333333 url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#showcase h1 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+#showcase .content-wrap,
+#section__a .content-wrap {
+    padding: 0 1.5em;
+}
+/* Section A */
+#section__a {
+    background: #eaeaea;
+    color:#333333;
+    padding-bottom: 2em;
+}
+
+/* Section B */
+#section__b {
+    padding:2em 1em 1em;
+}
+
+#section__b {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#section__b li {
+    margin-bottom: 1em;
+    background: #ffffff;
+    color: #333333;
+}
+
+.card__content {
+    padding: 1.5em;
+}
+
+/* Section C */
+
+#section__c {
+    background: #ffffff;
+    color: #333333;
+    padding: 2em;
+}
+
+/* Section D Boxes */
+#section__d .box {
+    padding: 2em;
+    color: #ffffff;
+}
+
+#section__d .box:first-child {
+    background: #2690d4;
+}
+
+/* Footer */
+#main__footer {
+    padding: 2em;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+#main__footer a {
+    color:#2690d4;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    #section__a .content__text {
+        columns: 2;
+        column-gap: 2em;
+    }
+
+    #section__a .content__text {
+        padding-top: 0;
+    }
+
+    .content__wrap, #section__b ul {
+        grid-column: 2/4;
+    }
+
+    .box, #main__footer div {
+        grid-column: span 2;
+    }
+
+    #section__b ul {
+        display:flex;
+        justify-content: space-around;
+    }
+
+    #section__b li {
+        width: 31%;
+    }
+}
