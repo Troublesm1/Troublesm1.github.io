@@ -116,6 +116,10 @@ p {
     text-decoration: none;
 }
 
+.content__text p {
+    padding-top: 0;
+}
+
 /* Media Queries */
 @media (min-width: 700px) {
     .grid {
