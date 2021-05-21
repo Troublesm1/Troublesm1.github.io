@@ -12,7 +12,7 @@ img {
     width: 100%;
     height: auto;
 }
-h1, h2, h3 {
+h1,h2,h3 {
     margin: 0;
     padding: 1em 0;
 }
@@ -40,7 +40,7 @@ p {
 }
 #showcase .bg__image {
     position: absolute;
-    background-color: #333333 url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+    background: #333333 url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,7 +61,7 @@ p {
 #section__a {
     background: #eaeaea;
     color:#333333;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 
 /* Section B */
